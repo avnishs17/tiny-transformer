@@ -1,0 +1,27 @@
+[project]
+name = "tinytransformer"
+version = "0.1.0"
+description = "Encoder-decoder Transformer built from scratch: byte-level BPE, OpenSubtitles en-hi, hand-written attention and AdamW"
+readme = "README.md"
+authors = [
+    { name = "avnishs17", email = "avnish1708@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "modal>=1.6.3",
+    "numpy>=2.4.6",
+    "torch>=2.15.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+# If working with torch-cpu 
+# [[tool.uv.index]]
+# name = "pytorch-cpu"
+# url = "https://download.pytorch.org/whl/cpu"
+# explicit = true
+
+# [tool.uv.sources]
+# torch = { index = "pytorch-cpu" }
